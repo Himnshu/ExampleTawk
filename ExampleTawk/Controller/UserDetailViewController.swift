@@ -40,7 +40,7 @@ class UserDetailViewController: BaseViewController {
         mSaveBtn.setTitleColor(color, for: .normal)
         
         setBackButton()
-        setTitle(title: userDataModel?.login! ?? "")
+        setTitle(title: userDataModel?.login ?? "")
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

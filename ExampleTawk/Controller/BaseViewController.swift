@@ -175,7 +175,7 @@ class BaseViewController: UIViewController {
     
     func updateProfileData(_ user: UserData) {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: kUserEntityName)
-        request.predicate = NSPredicate(format: "id=%@", "\(user.id!)")
+        request.predicate = NSPredicate(format: "id=%@", "\(user.id ?? 0)")
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
