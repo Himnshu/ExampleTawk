@@ -1,0 +1,26 @@
+PODS:
+  - PaginatedTableView (1.0.1)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - PaginatedTableView
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - PaginatedTableView
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 31df2d3eb10848e209f82f1cbb13ed870da6b78c
+
+COCOAPODS: 1.11.2
