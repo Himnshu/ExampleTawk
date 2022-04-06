@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import SDWebImage
 
 class UserTableViewCell: UITableViewCell {
     
@@ -38,9 +37,9 @@ class UserTableViewCell: UITableViewCell {
     }
     
     func updateUI(userDataModel: UserData) {
-        mAvtarImageView.sd_setImage(with: URL(string:userDataModel.avatar_url ?? ""), completed: { (image, error, type, url) in
+        ImageDownloader.shared.downloadImage(with: userDataModel.avatar_url ?? "", completionHandler: { (image, cached) in
             self.mAvtarImageView.image = image
-        })
+        }, placeholderImage: UIImage(named: "profile"))
         updateNoteImageWithMode()
         mUsernameLbl.text = userDataModel.login
         mDetailLbl.text = "detail"

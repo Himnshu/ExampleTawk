@@ -30,6 +30,14 @@ class ViewController: BaseViewController {
         super.viewWillAppear(animated)
         self.getUserList(id: 0)
     }
+    
+//    if !dataArray.isEmpty {
+//        dataArray.removeAll()
+//    }
+//    
+//    if !userArray.isEmpty{
+//        userArray.removeAll()
+//    }
 
     func getUserList(id: Int) {
         Indicator.sharedInstance.showIndicator()
@@ -52,12 +60,6 @@ class ViewController: BaseViewController {
     }
     
     func updateUserList(itemData:[UserData]) {
-        if !dataArray.isEmpty {
-            dataArray.removeAll()
-        }
-        if !userArray.isEmpty{
-            userArray.removeAll()
-        }
         dataArray.append(contentsOf: itemData)
         userArray.append(contentsOf: itemData)
         DispatchQueue.main.async{

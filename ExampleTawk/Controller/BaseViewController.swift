@@ -68,7 +68,44 @@ class BaseViewController: UIViewController {
     var context: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
-     }
+    }
+    
+    var appDelegate: AppDelegate {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate
+    }
+    
+    func getUserProfileData(_ user: UserData) -> UserData? {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: kUserEntityName)
+        request.predicate = NSPredicate(format: "id=%@", "\(user.id!)")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            if !result.isEmpty {
+                let data = result.first! as! NSManagedObject
+                var userDataModel = UserData()
+                userDataModel.avatar_url = data.value(forKey: "avtar") as! String?
+                userDataModel.login = data.value(forKey: "username") as? String
+                userDataModel.id = Int(data.value(forKey: "id") as! Int32)
+                userDataModel.name = data.value(forKey: "name") as? String
+                userDataModel.email = data.value(forKey: "email") as? String
+                userDataModel.isNote = data.value(forKey: "isNote") as? Bool
+                userDataModel.Note = data.value(forKey: "note") as? String
+                userDataModel.type = data.value(forKey: "type") as? String
+                userDataModel.followers = data.value(forKey: "followers") as? Int
+                userDataModel.following = data.value(forKey: "following") as? Int
+                userDataModel.bio = data.value(forKey: "bio") as? String
+                userDataModel.location = data.value(forKey: "location") as? String
+                userDataModel.blog = data.value(forKey: "blog") as? String
+                userDataModel.company = data.value(forKey: "company") as? String
+                return userDataModel
+            }
+            return nil
+        } catch {
+            print("Failed")
+            return nil
+        }
+    }
     
     func getUserDataListFromDB() -> [UserData]? {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: kUserEntityName)
@@ -133,7 +170,7 @@ class BaseViewController: UIViewController {
             newUser.setValue(user.company, forKey: "company")
             
             do {
-                try context.save()
+                appDelegate.saveContext()
                 print("Success")
             } catch {
                 print("Error saving: \(error)")
@@ -141,7 +178,7 @@ class BaseViewController: UIViewController {
         }
     }
     
-    func getUserProfileData(_ user: UserData) -> UserData? {
+    func updateUserNote(_ user: UserData) -> Bool? {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: kUserEntityName)
         request.predicate = NSPredicate(format: "id=%@", "\(user.id!)")
         request.returnsObjectsAsFaults = false
@@ -149,27 +186,15 @@ class BaseViewController: UIViewController {
             let result = try context.fetch(request)
             if !result.isEmpty {
                 let data = result.first! as! NSManagedObject
-                var userDataModel = UserData()
-                userDataModel.avatar_url = data.value(forKey: "avtar") as! String?
-                userDataModel.login = data.value(forKey: "username") as? String
-                userDataModel.id = Int(data.value(forKey: "id") as! Int32)
-                userDataModel.name = data.value(forKey: "name") as? String
-                userDataModel.email = data.value(forKey: "email") as? String
-                userDataModel.isNote = data.value(forKey: "isNote") as? Bool
-                userDataModel.Note = data.value(forKey: "note") as? String
-                userDataModel.type = data.value(forKey: "type") as? String
-                userDataModel.followers = data.value(forKey: "followers") as? Int
-                userDataModel.following = data.value(forKey: "following") as? Int
-                userDataModel.bio = data.value(forKey: "bio") as? String
-                userDataModel.location = data.value(forKey: "location") as? String
-                userDataModel.blog = data.value(forKey: "blog") as? String
-                userDataModel.company = data.value(forKey: "company") as? String
-                return userDataModel
+                data.setValue(user.Note, forKey: "note")
+                data.setValue(user.isNote, forKey: "isNote")
+                appDelegate.saveContext()
+                return true
             }
-            return nil
+            return false
         } catch {
             print("Failed")
-            return nil
+            return false
         }
     }
     
@@ -189,41 +214,10 @@ class BaseViewController: UIViewController {
                 data.setValue(user.location, forKey: "location")
                 data.setValue(user.blog, forKey: "location")
                 data.setValue(user.company, forKey: "location")
-                do {
-                    try context.save()
-                    print("Success")
-                } catch {
-                    print("Error saving: \(error)")
-                }
+                appDelegate.saveContext()
             }
         } catch {
             print("Failed")
-        }
-    }
-    
-    func updateUserNote(_ user: UserData) -> Bool? {
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: kUserEntityName)
-        request.predicate = NSPredicate(format: "id=%@", "\(user.id!)")
-        request.returnsObjectsAsFaults = false
-        do {
-            let result = try context.fetch(request)
-            if !result.isEmpty {
-                let data = result.first! as! NSManagedObject
-                data.setValue(user.Note, forKey: "note")
-                data.setValue(user.isNote, forKey: "isNote")
-                do {
-                    try context.save()
-                    print("Success")
-                    return true
-                } catch {
-                    print("Error saving: \(error)")
-                    return false
-                }
-            }
-            return false
-        } catch {
-            print("Failed")
-            return false
         }
     }
 

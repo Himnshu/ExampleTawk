@@ -62,12 +62,11 @@ class UserDetailViewController: BaseViewController {
     func updateProfileDataUI(userData : UserData) {
         userDataModel = userData
         DispatchQueue.main.async{
-            self.mAvtarImageView.sd_setImage(with: URL(string:self.userDataModel?.avatar_url ?? ""), completed: { (image, error, type, url) in
+            ImageDownloader.shared.downloadImage(with: self.userDataModel?.avatar_url ?? "", completionHandler: { (image, cached) in
                 self.mAvtarImageView.image = image
-            })
-            
-            self.mFollowersLbl.text = "\(userData.followers!)"
-            self.mFollowingLbl.text = "\(userData.following!)"
+            }, placeholderImage: UIImage(named: "profile"))
+            self.mFollowersLbl.text = "\(userData.followers)" ?? ""
+            self.mFollowingLbl.text = "\(userData.following)" ?? ""
             self.mNameLbl.text = userData.name
             self.mCompanyLbl.text = userData.company
             self.mBlogLbl.text = userData.blog

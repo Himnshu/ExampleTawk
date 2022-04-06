@@ -7,7 +7,6 @@ target 'ExampleTawk' do
 
   # Pods for ExampleTawk
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'SDWebImage', '~> 4.0'
   pod 'PaginatedTableView'
 
   target 'ExampleTawkTests' do

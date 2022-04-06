@@ -10,6 +10,7 @@
 		6CE6D2973E08C8D99296AA58 /* Pods_ExampleTawk_ExampleTawkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780786EAFC797B82568447B /* Pods_ExampleTawk_ExampleTawkUITests.framework */; };
 		A316A1CD27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316A1CC27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift */; };
 		A316A1D527F2FE72002BF55A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316A1D427F2FE72002BF55A /* UserData.swift */; };
+		A32C8E1C27FD71FD007137C1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */; };
 		A331211027F35CEC00B90814 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331210F27F35CEC00B90814 /* UserTableViewCell.swift */; };
 		A331212227F3658100B90814 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331212127F3658100B90814 /* UserDetailViewController.swift */; };
 		A331212F27F3667400B90814 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331212E27F3667400B90814 /* BaseViewController.swift */; };
@@ -63,6 +64,7 @@
 		904A36F2742BBF5E0F5D1BE7 /* Pods-ExampleTawk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawk.release.xcconfig"; path = "Target Support Files/Pods-ExampleTawk/Pods-ExampleTawk.release.xcconfig"; sourceTree = "<group>"; };
 		A316A1CC27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewControllerServiceManger.swift; sourceTree = "<group>"; };
 		A316A1D427F2FE72002BF55A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A331210F27F35CEC00B90814 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		A331212127F3658100B90814 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		A331212E27F3667400B90814 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				A3445DE327F2E1940072CFA6 /* Assets.xcassets */,
 				A3445DE027F2E1920072CFA6 /* ExampleTawk.xcdatamodeld */,
 				A392247527F2ED9E00EB9CC5 /* Utils */,
+				A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				A3445DDA27F2E1920072CFA6 /* SceneDelegate.swift in Sources */,
 				A3445DE227F2E1920072CFA6 /* ExampleTawk.xcdatamodeld in Sources */,
 				A392246727F2ED2300EB9CC5 /* CodableUtility.swift in Sources */,
+				A32C8E1C27FD71FD007137C1 /* ImageDownloader.swift in Sources */,
 				A36B291227F36F7B00A92284 /* UIImageView.swift in Sources */,
 				A331213427F3678700B90814 /* UIStoryboard+Instantiators.swift in Sources */,
 				A392245A27F2EBF800EB9CC5 /* NetworkUtility.swift in Sources */,
