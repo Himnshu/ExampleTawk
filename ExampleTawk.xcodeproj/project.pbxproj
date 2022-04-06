@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6CE6D2973E08C8D99296AA58 /* Pods_ExampleTawk_ExampleTawkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780786EAFC797B82568447B /* Pods_ExampleTawk_ExampleTawkUITests.framework */; };
 		A316A1CD27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316A1CC27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift */; };
 		A316A1D527F2FE72002BF55A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316A1D427F2FE72002BF55A /* UserData.swift */; };
 		A32C8E1C27FD71FD007137C1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */; };
@@ -36,8 +35,6 @@
 		A392247127F2ED6200EB9CC5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392247027F2ED6200EB9CC5 /* Result.swift */; };
 		A392247F27F2EDCA00EB9CC5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392247E27F2EDCA00EB9CC5 /* Utility.swift */; };
 		A392248427F2EDDB00EB9CC5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392248327F2EDDB00EB9CC5 /* Constant.swift */; };
-		AF4D7CC8846FE74E85395A4F /* Pods_ExampleTawkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC834BC0D064152DE724F8F6 /* Pods_ExampleTawkTests.framework */; };
-		D80CBB9E3E595342D7D82013 /* Pods_ExampleTawk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFABFC52B1A12765E2AE23F /* Pods_ExampleTawk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0009F887482CDD3FBDDD1639 /* Pods-ExampleTawkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawkTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTawkTests/Pods-ExampleTawkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1FD44F14860CE0DB8A1BDCCB /* Pods-ExampleTawk-ExampleTawkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawk-ExampleTawkUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTawk-ExampleTawkUITests/Pods-ExampleTawk-ExampleTawkUITests.release.xcconfig"; sourceTree = "<group>"; };
-		29CB96E49A9B0CC831262736 /* Pods-ExampleTawk-ExampleTawkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawk-ExampleTawkUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTawk-ExampleTawkUITests/Pods-ExampleTawk-ExampleTawkUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4AFA3CE8E9964E25E4B58CB1 /* Pods-ExampleTawk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawk.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTawk/Pods-ExampleTawk.debug.xcconfig"; sourceTree = "<group>"; };
-		712AA7ABF5B6B43DF7A6B64F /* Pods-ExampleTawkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawkTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTawkTests/Pods-ExampleTawkTests.release.xcconfig"; sourceTree = "<group>"; };
-		904A36F2742BBF5E0F5D1BE7 /* Pods-ExampleTawk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTawk.release.xcconfig"; path = "Target Support Files/Pods-ExampleTawk/Pods-ExampleTawk.release.xcconfig"; sourceTree = "<group>"; };
 		A316A1CC27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewControllerServiceManger.swift; sourceTree = "<group>"; };
 		A316A1D427F2FE72002BF55A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
@@ -98,9 +89,6 @@
 		A392247027F2ED6200EB9CC5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A392247E27F2EDCA00EB9CC5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		A392248327F2EDDB00EB9CC5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		B780786EAFC797B82568447B /* Pods_ExampleTawk_ExampleTawkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTawk_ExampleTawkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC834BC0D064152DE724F8F6 /* Pods_ExampleTawkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTawkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFFABFC52B1A12765E2AE23F /* Pods_ExampleTawk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTawk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80CBB9E3E595342D7D82013 /* Pods_ExampleTawk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4D7CC8846FE74E85395A4F /* Pods_ExampleTawkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,36 +110,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE6D2973E08C8D99296AA58 /* Pods_ExampleTawk_ExampleTawkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3862569A7C702166319453E9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4AFA3CE8E9964E25E4B58CB1 /* Pods-ExampleTawk.debug.xcconfig */,
-				904A36F2742BBF5E0F5D1BE7 /* Pods-ExampleTawk.release.xcconfig */,
-				29CB96E49A9B0CC831262736 /* Pods-ExampleTawk-ExampleTawkUITests.debug.xcconfig */,
-				1FD44F14860CE0DB8A1BDCCB /* Pods-ExampleTawk-ExampleTawkUITests.release.xcconfig */,
-				0009F887482CDD3FBDDD1639 /* Pods-ExampleTawkTests.debug.xcconfig */,
-				712AA7ABF5B6B43DF7A6B64F /* Pods-ExampleTawkTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		785A8448AF910C739E5B6558 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FFFABFC52B1A12765E2AE23F /* Pods_ExampleTawk.framework */,
-				B780786EAFC797B82568447B /* Pods_ExampleTawk_ExampleTawkUITests.framework */,
-				EC834BC0D064152DE724F8F6 /* Pods_ExampleTawkTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A3445DCB27F2E1920072CFA6 = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +123,6 @@
 				A3445DF027F2E1940072CFA6 /* ExampleTawkTests */,
 				A3445DFB27F2E1950072CFA6 /* ExampleTawkUITests */,
 				A3445DD527F2E1920072CFA6 /* Products */,
-				3862569A7C702166319453E9 /* Pods */,
-				785A8448AF910C739E5B6558 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -492,7 +452,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -697,7 +658,6 @@
 		};
 		A3445E0227F2E1950072CFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AFA3CE8E9964E25E4B58CB1 /* Pods-ExampleTawk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -719,7 +679,6 @@
 		};
 		A3445E0327F2E1950072CFA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 904A36F2742BBF5E0F5D1BE7 /* Pods-ExampleTawk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,7 +699,6 @@
 		};
 		A3445E0527F2E1950072CFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0009F887482CDD3FBDDD1639 /* Pods-ExampleTawkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -762,7 +720,6 @@
 		};
 		A3445E0627F2E1950072CFA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 712AA7ABF5B6B43DF7A6B64F /* Pods-ExampleTawkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -784,7 +741,6 @@
 		};
 		A3445E0827F2E1950072CFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29CB96E49A9B0CC831262736 /* Pods-ExampleTawk-ExampleTawkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,7 +760,6 @@
 		};
 		A3445E0927F2E1950072CFA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD44F14860CE0DB8A1BDCCB /* Pods-ExampleTawk-ExampleTawkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
