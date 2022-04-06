@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 protocol UserListViewControllerServiceMangerDelegate : class{
     func UserListViewControllerServiceMangerDelegate(serviceManger: UserListViewControllerServiceManger, didFetchingData data: [UserData]?)

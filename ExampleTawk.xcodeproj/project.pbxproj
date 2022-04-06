@@ -12,6 +12,7 @@
 		A316A1D527F2FE72002BF55A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316A1D427F2FE72002BF55A /* UserData.swift */; };
 		A32C8E1C27FD71FD007137C1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */; };
 		A32C8E2927FD8C6E007137C1 /* PaginatedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C8E2827FD8C6E007137C1 /* PaginatedTableView.swift */; };
+		A32C8E3527FDA16B007137C1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C8E3427FDA16B007137C1 /* SwiftyJSON.swift */; };
 		A331211027F35CEC00B90814 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331210F27F35CEC00B90814 /* UserTableViewCell.swift */; };
 		A331212227F3658100B90814 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331212127F3658100B90814 /* UserDetailViewController.swift */; };
 		A331212F27F3667400B90814 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331212E27F3667400B90814 /* BaseViewController.swift */; };
@@ -67,6 +68,7 @@
 		A316A1D427F2FE72002BF55A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A32C8E1B27FD71FD007137C1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A32C8E2827FD8C6E007137C1 /* PaginatedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedTableView.swift; sourceTree = "<group>"; };
+		A32C8E3427FDA16B007137C1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A331210F27F35CEC00B90814 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		A331212127F3658100B90814 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		A331212E27F3667400B90814 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				A316A1CC27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift */,
 				A346AE6C27F5B2AD00AF3360 /* UserProfileViewControllerServiceManger.swift */,
+				A32C8E3427FDA16B007137C1 /* SwiftyJSON.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,7 +311,6 @@
 				A3445DD027F2E1920072CFA6 /* Sources */,
 				A3445DD127F2E1920072CFA6 /* Frameworks */,
 				A3445DD227F2E1920072CFA6 /* Resources */,
-				F1E24139E824FEA7DA868D48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,7 +348,6 @@
 				A3445DF427F2E1950072CFA6 /* Sources */,
 				A3445DF527F2E1950072CFA6 /* Frameworks */,
 				A3445DF627F2E1950072CFA6 /* Resources */,
-				8387B9D9F9AFA249EEAF5C18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,23 +451,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8387B9D9F9AFA249EEAF5C18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleTawk-ExampleTawkUITests/Pods-ExampleTawk-ExampleTawkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleTawk-ExampleTawkUITests/Pods-ExampleTawk-ExampleTawkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleTawk-ExampleTawkUITests/Pods-ExampleTawk-ExampleTawkUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8C07B2D4DB2989F5625D6DD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,23 +495,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F1E24139E824FEA7DA868D48 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleTawk/Pods-ExampleTawk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExampleTawk/Pods-ExampleTawk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleTawk/Pods-ExampleTawk-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -543,6 +510,7 @@
 				A316A1CD27F2FE1D002BF55A /* UserListViewControllerServiceManger.swift in Sources */,
 				A331211027F35CEC00B90814 /* UserTableViewCell.swift in Sources */,
 				A346AE8C27F5D13B00AF3360 /* UIColor.swift in Sources */,
+				A32C8E3527FDA16B007137C1 /* SwiftyJSON.swift in Sources */,
 				A3445DDC27F2E1920072CFA6 /* ViewController.swift in Sources */,
 				A32C8E2927FD8C6E007137C1 /* PaginatedTableView.swift in Sources */,
 				A392247F27F2EDCA00EB9CC5 /* Utility.swift in Sources */,

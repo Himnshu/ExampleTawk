@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 enum ReqestType:String{
     case post = "POST"

@@ -6,7 +6,6 @@ target 'ExampleTawk' do
   use_frameworks!
 
   # Pods for ExampleTawk
-  pod 'SwiftyJSON', '~> 4.0'
 
   target 'ExampleTawkTests' do
     inherit! :search_paths

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 struct UserData : Codable {
     var login : String?
