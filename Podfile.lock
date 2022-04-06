@@ -1,20 +1,16 @@
 PODS:
-  - PaginatedTableView (1.0.1)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
-  - PaginatedTableView
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
-    - PaginatedTableView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 9ebd2b05d5de74557240d23e43bbbfb804798f8a
+PODFILE CHECKSUM: b9ac479698497e586476a23923ef61e7996044dd
 
 COCOAPODS: 1.11.2
